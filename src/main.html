@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title></title>
+</head>
+<body>  
+    <label for="invNumber">No. Invoice</label>
+    <input type="text" id="invNumber"><br>
+    <label for="customer">Pelanggan</label>
+    <input type="text" id="customer"><br>
+    <label for="createdDate">Tanggal</label>
+    <input type="date" id="createdDate"><br>
+    <label for="dueDate">Jatuh Tempo</label>
+    <input type="date" id="dueDate"><br>
+    <label for="discount">Diskon</label>
+    <input type="number" id="discount"><br>
+    <input type="submit" value="Send Data" id="submit">
+    <hr>
+    <table>
+        <tr>
+            <td>
+                <p>Nama Produk</p>
+            </td>
+            <td>
+                <p>Jumlah</p>
+            </td>
+            <td>
+                <p>Diskon</p>
+            </td>
+            <td>
+                <p>Deskripsi</p>
+            </td>
+            <td>
+                <p>Hapus barang</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="product" class="product">
+            </td>
+            <td>
+                <input type="number" id="quantity" class="quantity">
+            </td>
+            <td>
+                <input type="number" id="discount" class="discount">
+            </td>
+            <td>
+                <input type="text" id="description" class="desctiprion">
+            </td>
+            <td>
+                <button class="deleteBtn">X</button>
+            </td>
+        </tr>
+    </table>
+    <button id="newBtn">Tambah barang</button>
+
+    <p id="result"></p>
+    <button id="load">load</button>
+</body>
+<script>
+    require('./renderer.js');
+</script>
+</html>
